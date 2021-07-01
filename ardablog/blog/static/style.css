@@ -1,0 +1,208 @@
+html,
+body {
+  min-height: 100vh;
+  background-color: #fdfffc;
+  max-width: 100vw;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", sans-serif;
+}
+p {
+  text-overflow: ellipsis;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+}
+/* Navbar */ 
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 15vh;
+  position: sticky;
+}
+.navbar-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-item a.middle {
+  text-decoration: none;
+  color: #41ead4;
+  font-size: 1.3rem;
+  border-radius: 15px;
+  padding: 0.3em 0.25em;
+  transition: 0.5s;
+}
+.navbar-middle ul > li {
+  padding-right: 0.4em;
+}
+.navbar-right {
+  justify-content: flex-end;
+  padding-right: 1em;
+}
+.navbar-left a.left {
+  text-decoration: none;
+  color: #41ead4;
+  border-radius: 15px;
+  padding: 0.3em 0.25em;
+  transition: 0.5s;
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+}
+.navbar-item ul {
+  list-style-type: none;
+  display: flex;
+}
+#navbar-right a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: black;
+}
+.navbar-right > ul > li {
+  margin-right: 0.4em;
+}
+a.middle:hover,
+a.left:hover {
+  color: #457b9d;
+}
+/* Carousel */
+.caro {
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.caro > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+.caro > div {
+  position: relative;
+  top: -100px;
+  z-index: 3;
+}
+.caro > div > h4 {
+  font-size: 2em;
+  color: black;
+}
+.gozat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 100px;
+  z-index: 100;
+}
+.gozat a {
+    position: relative;
+    font-size: 1.2em;
+letter-spacing: .2em;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 0.2em 4em;
+  background-color: #fdfffc;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+  border-radius: 30px;
+  transition: 1s;
+}
+.gozat a:hover{
+    bottom:4px
+}
+.gozat a img {
+  display: block;
+  height: 30px;
+  width: 51px;
+}
+
+/* Birinci Section */
+
+section.first {
+  background-color: #8d99ae;
+  padding: 1em 1em;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+section.first > div {
+  height: 90%;
+  background-color: #fdfffc;
+  margin: auto auto;
+  display: flex;
+  width: 90%;
+  border-radius: 15px;
+  padding: 0.5em 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+section.first > div > div {
+  overflow: hidden;
+  width: 48%;
+  height: 100%;
+  text-overflow: ellipsis;
+}
+/* İkinci Section */
+section.second {
+  width: 100%;
+  background-color: #ff9f1c; 
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  padding:0 5%;
+}
+section.second div{
+  height: initial;
+}
+section.second .index-card{
+  display: flex;
+  margin:auto 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 500px;
+  height: 45vh;
+  border-radius: 15px;
+  overflow:hidden
+  }
+section.second img.card-background{
+  border-radius: 15px;
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+  height: 
+  inherit;
+}
+section.second h3.card-header{
+  width: 100%;
+  background-color:rgba(255, 255, 255, 0.336);
+  border-radius: 15px 15px 0 0;
+  z-index: 2;
+  margin:0;
+  padding:.5em;
+  text-align: center;
+}
+section.second p.card-paragraph{
+  /* width: 100%; */
+  background-color:rgba(255, 255, 255, 0.808);
+  border-radius: 0 0 15px 15px ;
+  z-index: 2;
+  margin:0;
+  padding: 1em;
+}
+/* Üçüncü Section */
+/* section.third {background-color: #1D201F;  height: 30vh;
+  display: flex;
+  align-items: center;
+  padding:0 5%;
+} */
